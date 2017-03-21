@@ -119,7 +119,7 @@ public class Esame {
 		if(this.superato)
 			return this.dataSuperamento;
 		else
-			throw new IllegalStateException("Esame" + this.codice + "non ancora superato");
+			throw new IllegalStateException("Esame " + this.codice + " non ancora superato");
 	}
 
 
@@ -169,9 +169,10 @@ public class Esame {
 			this.voto = voto;
 			this.dataSuperamento = data;
 		}else{
-			throw new IllegalStateException("Esame" + this.codice + "già superato");
+			throw new IllegalStateException("Esame " + this.codice + " già superato");
 		}
 	}
+	
 	
 	
 	
